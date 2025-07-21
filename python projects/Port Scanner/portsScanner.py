@@ -1,5 +1,13 @@
 import socket
+"""
+simple port scanner 
 
+args 
+    ip and number of ports
+
+returns
+    how many ports are open
+"""
 def scan_port(ip, port):
     try:
         check = socket.socket(socket.AF_INET, socket.SOCK_STREAM) # Specify AF_INET for IPv4, SOCK_STREAM for TCP
